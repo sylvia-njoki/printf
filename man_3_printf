@@ -84,6 +84,7 @@ ring, with non-printable characters (0 < ASCII value < 32 or >= 127).
 .R The \fIvoid * pointer\fR argument is printed in hexadecimal.
 .TP
 .B S
+B S
 .R The \fIconst char\fR argument is a pointer to an array
 .SH The flag characters
 The character \fI%\fR is followed by zero the following flags:
@@ -114,7 +115,7 @@ int main(void)
 	_printf(''%s'', ''Hello, Sylvia!'')
 
 	_printf(''Hello Sylvia! contains %d characters'', length);
-
+	
 	length = _printf(''Hello Sylvia!'');
 
 	return (0);
@@ -124,4 +125,3 @@ int main(void)
 .R printf(3)
 .SH AUTHORS
 Written by \fBSylvia Njoki \fR.i and G-RIMA
-
